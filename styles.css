@@ -1,0 +1,284 @@
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --padding-sections: 5%;
+
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* open-sans-600 - latin */
+@font-face {
+font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+src: url('fonts/open-sans-v40-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  
+  /* open-sans-700 - latin */
+@font-face {
+font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+src: url('fonts/open-sans-v40-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+  /* poppins-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/poppins-v22-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem var(--padding-sections);
+  position: sticky;
+  top: 0;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 95%);
+}
+
+.huddle-logo {
+  width: 130px;
+  height: 33px;
+  padding-top: 2px;
+}
+.huddle-logo img {
+  width: 100%;
+}
+.top-nav button{
+  padding: .5rem 1.5rem;
+  border-radius: 20px;
+  border: 2px solid var(--Light-Pink);
+  color: var(--Light-Pink);
+  background-color: #fff;
+}
+
+.section-1 {
+  padding: 100px var(--padding-sections) 0;
+  text-align: center;
+}
+
+.large-txt {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 25px;
+}
+.section-1 .small-txt {
+  max-width: 480px;
+  margin: 20px auto;
+}
+
+.small-txt {
+  margin: 20px 0;
+}
+.build button {
+  color: #fff;
+  background-color: var(--Light-Pink);
+  border: none;
+  border-radius: 20px;
+  padding: .8rem 2.3rem;
+  margin-bottom: 50px;
+}
+
+.screen-mockup {
+  max-width: 577px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.flex-stats {
+  padding: var(--padding-sections);
+  max-width: 710px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.small-svgs {
+  width: 20px;
+}
+.stats {
+  width: fit-content;
+}
+.flex-stats .small-txt{
+  font-size: 12px;
+  margin-top: 10px;
+}
+.large-number {
+  font-weight: 700;
+  font-size: 50px;
+}
+.stats:nth-child(1) {
+  margin-bottom: 2rem;
+}
+
+
+
+.section-2,
+.section-4 {
+  background-color: var(--Very-Pale-Blue);
+}
+.svg-curves {
+  background-color: #fff;
+}
+
+.similar {
+  padding: 100px var(--padding-sections);
+}
+.similar-img {
+  max-width: 500px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+.similar-txt {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 517px;
+}
+
+.flowing {
+  padding-top: 150px;
+}
+
+
+.section-5 {
+  text-align: center;
+  padding: 100px var(--padding-sections) 200px;
+}
+.section-5 .large-txt {
+  margin-bottom: 30px;
+}
+.section-5 button {
+  color: #fff;
+  background-color: var(--Light-Pink);
+  border: none;
+  border-radius: 20px;
+  padding: .8rem 2.3rem;
+  margin-bottom: 50px;
+}
+
+
+
+footer {
+  color: #fff;
+  background-color: var(--Very-Dark-Cyan);
+}
+.footer-div {
+  padding: 50px var(--padding-sections);
+}
+.footer-div .small-txt {
+  max-width: 400px;
+}
+
+.newsletter-div,
+.foot-huddle {
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+.input-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 300px;
+}
+.input-div input {
+  border: none;
+  padding: .5rem;
+  border-radius: 5px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.input-btn button {
+  border: none;
+  padding: .5rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--Light-Pink);
+  width: 120px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.foot-huddle-logo {
+  width: 150px;
+  height: 40px;
+  padding-top: 2px;
+}
+.contact-info {
+  line-height: 2;
+}
+.contact-info img{
+  width: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media (min-width: 700px) {
+  .flex-stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .stats:nth-child(1) {
+    margin-bottom: 0;
+  }
+  .section-5 {
+    padding: 100px var(--padding-sections) 100px;
+  }
+  .input-div {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .footer-div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1100px) {
+  .similar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .similar-txt {
+    text-align: left;
+  }
+  .similar-img {
+    padding-bottom: 0;
+  }
+}
